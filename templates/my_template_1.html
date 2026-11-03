@@ -1,10 +1,16 @@
 {{ bootstrap.load_css() }}
 {{ bootstrap.load_js() }}
 
+
+{% if message == 'hi' %}
+    <img src="/static/images/img.jpeg">
+{% else %}
+    <h1>{{ message }}</h1>
+{% endif %}
+
 <div class="text-center">
     <img src="https://picsum.photos/id/237/600/401"
          class="rounded w-50"
          alt="dog"
 </div>
     <h1> {{ message }} </h1>
-
